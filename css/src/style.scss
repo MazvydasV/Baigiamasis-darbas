@@ -1,8 +1,9 @@
 @import "header.scss";
 @import "footer.scss";
+@import "global.scss";
 
 body {
-    background: pink;
+    margin: 0;
     display: flex;
 
     h1 {
