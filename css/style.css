@@ -1,1 +1,1 @@
-body{background:pink}body h1{font-size:40px;text-align:center}
+header{position:fixed}body{background:pink;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}body h1{font-size:40px;text-align:center;color:red}
