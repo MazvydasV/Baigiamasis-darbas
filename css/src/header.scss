@@ -4,4 +4,29 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        nav {
+            ul {
+                display: flex;
+                padding: 0;
+                list-style: none;
+
+                li {
+                    color: white;
+                    opacity: 0.6;
+
+                    &:not(:last-child) {
+                        margin-right: 45px;
+                    }
+                }
+            }
+        }
+    }
 }
