@@ -20,4 +20,21 @@ for (let tabElement of tabNavigationElements) {
     });
 }
 
+//swiper gallery
+
+const swiper = new Swiper('.reviews-swiper', {
+    // Optional parameters
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    autoHeight: true,
+    spaceBetween: 120,
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+ });
+
 

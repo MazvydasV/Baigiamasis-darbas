@@ -1,0 +1,40 @@
+.review {
+    padding: 50px 0;
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .single-review {
+        .text {
+            background-color: #6696e2;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        p {
+            color: white;
+            line-height: 1.375;
+            font-size: 10px;
+        }
+    }
+    .swiper-pagination {
+        position: static;
+        margin-top: 85px;
+
+        .swiper-pagination-bullet {
+            margin: 0;
+            width: 10px;
+            height: 10px;
+            border: 1px solid #e27866;
+            opacity: 1;
+            background-color: transparent;
+
+            &:not(last-child) {
+                margin-right: 20px;
+            }
+
+            &-active {
+                background-color: #e27866;
+            }
+        }
+    }
+}
