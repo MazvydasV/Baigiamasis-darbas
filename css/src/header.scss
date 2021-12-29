@@ -4,6 +4,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 9999;
 
     .container {
         display: flex;
@@ -25,6 +26,10 @@ header {
 
                     &:not(:last-child) {
                         margin-right: 45px;
+                    }
+                    a {
+                        color: white;
+                        opacity: 0.6;
                     }
                 }
             }

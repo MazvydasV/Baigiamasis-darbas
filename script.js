@@ -24,17 +24,28 @@ for (let tabElement of tabNavigationElements) {
 
 const swiper = new Swiper('.reviews-swiper', {
     // Optional parameters
-    slidesPerView: 3,
+    speed: 800,
+    slidesPerView: 1,
     slidesPerGroup: 3,
     autoHeight: true,
-    spaceBetween: 120,
+    spaceBetween: 50,
     loop: true,
+    autoplay: {
+        delay: 2000,
+    },
   
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
       clickable: true
     },
+    breakpoints: {
+        800: {
+            slidesPerView: 3,
+            spaceBetween: 120,
+
+        }
+    }
  });
 
 
