@@ -49,3 +49,31 @@ const swiper = new Swiper('.reviews-swiper', {
  });
 
 
+ // fc82080fac29fcc051cb8b24782a3344  mano API key is openweathermap.org  open weather data from API
+
+ const url = "https://api.openweathermap.org/data/2.5/weather?q=Jieznas&units=metric&appid=fc82080fac29fcc051cb8b24782a3344";
+ const city ="Jieznas";
+ const wheatherElement = document.getElementById("wheater-in-celsius");
+
+ function getCurrentWeather() {
+     const http = new XMLHttpRequest();
+     http.open("GET", url);
+     http.addEventListener('load', function() {
+         const response = JSON.parse(http.response);
+         const temperature = response.main.temp;
+
+         if (temperature > 0) {
+             wheatherElement.innerText = "+" + temperature;
+         }
+         else {
+             wheatherElement.innerText = temperature;
+         }
+         
+     })
+     http.send();
+ }
+
+
+ window.addEventListener('load', getCurrentWeather);
+
+
