@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    justify-content:space-around;
+    .textContainer {
+        max-width: 500px;
+
+    }
+    .imagesContainer {
+        max-width: 500px;
+        display: flex;
+        justify-content: space-between;
+        img:not(last-child) {
+            margin-right: 70px;
+        }
+    }
+}
+
+
